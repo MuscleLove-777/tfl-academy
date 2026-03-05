@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TFL作成アカデミー - 臨床試験のテーブル（Tables）一覧。安全性、有効性、人口統計テーブルの種類と仕様を解説。">
+  <title>テーブル一覧 | TFL作成アカデミー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">
+        <span class="logo-icon">&#x1F4CA;</span>
+        <span>TFL作成アカデミー</span>
+      </a>
+      <nav class="nav-menu" aria-label="メインナビゲーション">
+        <a href="../index.html">ホーム</a>
+        <a href="../tables/index.html">テーブル</a>
+        <a href="../figures/index.html">図</a>
+        <a href="../listings/index.html">一覧表</a>
+        <a href="../guide/index.html">作成ガイド</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle nav-menu-link">ツール</span>
+          <div class="nav-dropdown-menu">
+            <a href="../tools/shell-builder.html">シェルビルダー</a>
+            <a href="../tools/quiz.html">クイズ</a>
+          </div>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルナビゲーション">
+      <a href="../index.html">ホーム</a>
+      <a href="../tables/index.html">テーブル</a>
+      <a href="../figures/index.html">図</a>
+      <a href="../listings/index.html">一覧表</a>
+      <a href="../guide/index.html">作成ガイド</a>
+      <span class="mobile-submenu-label">ツール</span>
+      <div class="mobile-submenu">
+        <a href="../tools/shell-builder.html">シェルビルダー</a>
+        <a href="../tools/quiz.html">クイズ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>&#x1F4CA; テーブル（Tables）一覧</h1>
+        <p>臨床試験で作成する主要なテーブルの種類と仕様</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- フィルター -->
+        <div class="filter-bar" id="table-filters">
+          <button class="filter-btn active" data-filter="all">すべて</button>
+          <button class="filter-btn" data-filter="safety">安全性</button>
+          <button class="filter-btn" data-filter="efficacy">有効性</button>
+          <button class="filter-btn" data-filter="demographics">人口統計</button>
+          <button class="filter-btn" data-filter="disposition">被験者の内訳</button>
+        </div>
+
+        <!-- カード一覧 -->
+        <div class="grid grid-2" id="table-cards">
+          <!-- JS で動的生成 -->
+        </div>
+
+        <!-- 詳細パネル -->
+        <div id="table-detail" style="display:none;">
+          <!-- JS で動的生成 -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>本サイトは学習目的の参考資料です。実際のTFL作成にあたっては、各試験のSAPおよびスポンサーの規定に従ってください。</p>
+        <p>&copy; 2024 TFL作成アカデミー All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/tables.js"></script>
+</body>
+</html>
